@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairo Spark | CEO Henry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .profile {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 30px;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        main {
+            margin-top: 50px;
+            max-width: 700px;
+            padding: 0 20px;
+            animation: fadeIn 3s ease-in;
+        }
+
+        main h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ffb347, #ffcc33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientText 3s infinite alternate;
+        }
+
+        main p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes gradientText {
+            0% {background-position: 0% 50%;}
+            100% {background-position: 100% 50%;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nairo Spark</h1>
+        <p>CEO Henry</p>
+        <!-- Replace 'yourphoto.jpg' with your actual photo file -->
+        <img src="yourphoto.jpg" alt="Henry's Photo" class="profile">
+    </header>
+
+    <main>
+        <h2>Stay Inspired, Stay Unstoppable!</h2>
+        <p>Every day brings a new opportunity to grow, learn, and move closer to your dreams.</p>
+        <p>Believe in yourself, embrace challenges, and let your actions speak louder than words.</p>
+        <p>Your potential is limitless. Keep pushing, striving, and never give up!</p>
+    </main>
+
+    <footer>
+        &copy; 2025 Nairo Spark | All Rights Reserved
+    </footer>
+</body>
+</html>
